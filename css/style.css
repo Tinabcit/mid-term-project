@@ -1,0 +1,364 @@
+/*
+    Name: Tina Shabestari
+    StudentID: A01002676
+    Course: COMP 1850-Into to Web Develoment- CRN:34383
+    Completed Date: Oct, 31th,2022
+    Due Date: Nov,07th,2022
+*/
+/*
+Added an margin,padding,box sizing for the main page of the html pages.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+Added body css style for all the html pages.
+*/
+body{
+    background-color: #D5BDAF;
+    font-family: 'Source Serif Pro', serif;
+}
+/*
+Added an ul attribute style for the ordered list for the navigation bars.
+*/
+ul{
+    list-style: none;
+}
+/*
+Added 'a' anchor tag style for the order list links for the navigation bars.
+*/
+a{
+    text-decoration: none;
+}
+/*
+Added an class which displays the logo of the this responsive project .
+*/
+.cakelogo{
+    padding: 20px;
+    width:250px;
+}
+/*
+Added an header tag style which is used for the navigations and the front page video sections.
+*/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:rgb(101, 71, 32);
+    padding: 35px 100px 0;
+}
+/*
+Added an header tag anchor tag style to change and reposition the anchor tag header descriptive details.
+*/
+header a{
+    text-transform: capitalize;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(205, 176, 205);
+}
+/*
+Added an header tag anchor tag style to change its style when users visit the page(such as color, text attributs, etc)
+*/
+header a:visited{
+    text-transform: capitalize;
+    font-weight: 900;
+    text-align: center;
+    color: rebeccapurple;
+}
+/*Added an header tag anchor tag style to change its style when users hover the page(such as color, text attributs, etc)
+
+*/
+header a:hover{
+    text-transform: capitalize;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(151, 127, 175);
+}
+/*
+Added an header tag anchor tag style to change its style when users visit after the page(such as color, text attributs, etc)
+*/
+header a::after{
+    text-transform: capitalize;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(195, 180, 210);
+}
+/*
+Added an header h1 tag in order to style the first h1 header tag in this responsive website.
+*/
+header h1{
+    position: relative;
+    bottom: 2px;
+    top: 133px;
+    left: 640px;
+}
+/*
+Added an header h2 tag in order to style the first h1 header tag in this responsive website.
+*/
+header h2{
+    text-transform: uppercase;
+}
+/*
+Added an header navigation bar class to change the navigation bar attribute.
+*/
+header .nav-bar{
+    display: flex;
+}
+/*
+Added an header navigation bar class to change the navigation bar attribute list specificly.
+*/
+header .nav-bar li{
+    margin:0 15px;
+}
+/*
+Added an header navigation bar class to change the navigation bar attribute list first child attribute.
+*/
+header .nav-bar li:first-child{
+    margin-left: 0;
+}
+/*
+Added an header navigation bar class to change the navigation bar attribute list last child attribute.
+*/
+header .nav-bar li:last-child{
+    margin-right: 0;
+}
+/*
+Added media query for the header section only in all the html pages and gave a attribute properties to each style.
+*/
+@media(max-width:1000px){
+    header{
+        padding:20px 50px;
+    }
+}
+/*
+Added media query for the header section only in all the html pages and gave a attribute properties to each style.
+*/
+@media(max-width:700px){
+    header{
+       flex-direction:column;
+    }
+    header h2{
+        margin-bottom: 15px;
+    }
+    header .nav-bar li{
+        margin: 0 7px;
+    }
+}
+/*
+Added h3 attribute in the lorem ipsum page and about us html page for give it a style and change the text color design.
+*/
+h3{
+    margin-left: 56px;
+    margin-top:70px;
+    color:#4066a7;
+    font-size:x-large;
+}
+/*
+Added an emoji attribute in aboutus html and lorem ipsum page to give an additional touch to the page.
+*/
+span{
+    content: "\263A";
+}
+/*
+Created and added a class for the index html page in order display the video tag which show a woman creating a homemade cake.
+*/
+.box{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+/*
+Created and added a class for the index html page in order display the video tag which show a woman creating a homemade cake.
+*/
+.box video{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+/*
+Added and commented out a css style attribute code due to it did not display the result I wanted to achieve.
+*/
+/* #chocolate-cake{
+    float:left;
+    width:400px;
+    display: block;
+    margin-left: auto;
+}
+#vanila-cake{
+    float: right;
+    width: 400px;
+    display: block;
+    margin-right: auto;
+} */
+/*
+Added a id attribute in the about us html page for the product text display format and layout style in the section tag.
+*/
+#baked-cake{
+    width:400px;
+    margin-right: auto;
+}
+/*
+Added a class attribute in the about us html page for the product images display format and layout style in section tag
+*/
+div.center{
+    height: 10em;
+    position: relative;
+}
+/*
+Added a class attribute in the about us html page for the product images display format and layout style especially in the 'p' paragraph tags.
+*/
+div.center p{
+    margin: 0;
+    position: relative;
+    bottom: 200%;
+    color: #126e83;
+    margin-left: 550px;
+}
+/*
+Added section css style for all the html pages with the specific attributes style to match requirements and to make it responsive website.
+*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+/*
+Added on the lorem ipsum page in the section the h2 design including a change in color text.
+*/
+section h2{
+    color: rgb(176, 108, 86);
+}
+/*
+Added on the lorem ipsum page in the section the blockquote design including a border around image area.
+*/
+section .article-image{
+    margin-right: 1550px;
+    border: 5px solid rgb(81, 74, 173) ;
+}
+/*
+Added on the lorem ipsum page in the section the blockquote design including a border around quotes area.
+*/
+section blockquote{
+    border: 10px solid rgb(154, 154, 65);
+}
+/*
+Added and creaded ac class for empty html a empty place holder .
+*/
+section.empty{
+    outline: 2px solid black;
+    height: 650px;
+}
+/*
+Added on the lorem ipsum page a border style for the ordered lists 'li' tags and created a class.
+*/
+ul.roman-ul{
+    border: solid rgb(212, 179, 118);
+}
+/*
+Added on the lorem ipsum page a roman style for the ordered lists 'li' tags and created a class.
+*/
+ul.roman-ul li{
+    list-style-type:upper-roman;
+}
+/*
+Added on the lorem ipsum page a border style for the unordered lists 'li' tags and created a class.
+*/
+ol.roman-ol{
+    border: solid rgb(209, 158, 63);
+}
+/*
+Added on the lorem ipsum page a roman style for the unordered lists 'li' tags and created a class.
+*/
+ol.roman-ol li{
+    list-style-type:upper-roman;
+}
+/*
+Added on the lorem ipsum page a section and created a class to make border style for the 'p' paragraph tags.
+*/
+section p.para{
+    border: 2px solid rgb(138, 88, 88);
+}
+/*
+Added an class for the icon instegram business account which I have created in order to make the responive website more realistic and show were the users can contact the product.
+*/
+.instegram{
+    padding: 20px;
+    width: 75px;
+}
+/*
+Added an class for the icon twitter business account which I have created in order to make the responive website more realistic and show were the users can contact the product.
+*/
+.twitter{
+    padding: 20px;
+    width: 75px;
+}
+/*
+Added an footer attribute css style to included a sticky footer postion and other responsive design details.
+*/
+footer{
+    position:relative;
+    left:0;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+}
+/*fix up the footer content*/
+footer a.footer-div{
+    color:#FFF3B0;
+}
+footer footer-div a:hover{
+    color:#E09F3E;
+    border-color:#FFF3B0;
+}
+footer footer-div a:focus {
+    color:#E09F3E;
+    border-color:#FFF3B0;
+}
+
+/*
+Added media query for the large pixel wide and changed the section and background color.
+*/
+@media (max-width:1000px){
+    body{
+        background-color: lightgreen;
+    }
+    section{
+        padding: 100px 50px;
+    }
+}
+/*
+Added media query for the averge pixel wide and changed the section and background color.
+*/
+@media (max-width:600px){
+    body{
+        background-color: lavender;
+    }
+    section{
+        padding: 125px 30px;
+    }
+}
+/*
+Added media query for the smallest pixel wide and changed the section and background color.
+*/
+@media (max-width:300px){
+    body{
+        background-color: lightblue;
+    }
+    section{
+        padding: 150px 10px;
+    }
+}
